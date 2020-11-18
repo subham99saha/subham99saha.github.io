@@ -7,6 +7,7 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Homemade+Apple|Oswald|Cookie|Quicksand|Amatic+SC|Dancing+Script|Satisfy|Indie+Flower|Lobster&display=swap" rel="stylesheet">
+<script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
 <style>
 body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 .w3-row-padding img {margin-bottom: 12px}
@@ -16,15 +17,47 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
   background-repeat: no-repeat;
   background-size: cover;
   background-image: url('https://i2.wp.com/ratexblog.files.wordpress.com/2020/02/20191001134400_img_3548.jpg?ssl=1');
+  //background-image: url('https://i0.wp.com/ratexblog.files.wordpress.com/2020/11/screenshot_2020-11-18-21-25-58-255_com.miui_.gallery.png?ssl=1');
   min-height: 100%;
 }
+
+@keyframes sample {
+  from {background-color: pink;}
+  to {background-color: yellow;}
+}
+
+/*body {
+  animation-name: sample;
+  animation-duration: 60s;
+}*/
 </style>
 <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+<script>
+
+
+  $(window).scroll(function() {
+   var hT1 = $('#portfolio').offset().top,
+       hT2 = $('#about').offset().top,
+       hH = $('#portfolio').outerHeight(),
+       wH = $(window).height(),
+       wS = $(this).scrollTop();
+   if ((wS > hT1) && (wS < hT2)){
+       jQuery('#bgimage').css('opacity', '0.1');
+       //jQuery('#bgimage').animate({opacity: '0.2'}, "slow");
+       
+   }else{
+      jQuery('#bgimage').css('opacity', '1');
+      //jQuery('#bgimage').animate({opacity: '1'}, "slow");
+   }
+  }); 
+
+</script>
+
 <body>
 
 <!-- Sidebar with image -->
 <nav class="w3-sidebar w3-hide-medium w3-hide-small" style="width:40%; padding: 5%;">
-  <div class="bgimg"></div>
+  <div class="bgimg" id='bgimage' style=''></div>
 </nav>
 
 <!-- Hidden Sidebar (reveals when clicked on menu icon)-->
@@ -41,7 +74,7 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 </nav>
 
 <!-- Page Content -->
-<div class="w3-main w3-padding-large" style="margin-left:40%">
+<div class="w3-main w3-padding-large" id='pgcont' style="margin-left:40%;">
 
   <!-- Menu icon to open sidebar -->
   <span class="w3-button w3-top w3-white w3-xxlarge w3-text-grey w3-hover-text-black" style="width:auto;right:0;" onclick="openNav()"><i class="fa fa-bars"></i></span>
@@ -75,7 +108,8 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
         <!--<div style='padding:0.5px 1px 0.5px 1px; width:100%;'><a href='http://ratex.ml' target='blank'><img src="https://ratexblog.files.wordpress.com/2019/09/img_20190828_201101.png" style="width:100%"></a></div>
         <div style='padding:0.5px 1px 0.5px 1px; width:100%;'><a href='http://soundtemple2.github.io' target='blank'><img src="https://i1.wp.com/ratexblog.files.wordpress.com/2020/02/soundtemple.png?ssl=1" style="width:100%"></a></div>
         <div style='padding:0.5px 1px 0.5px 1px; width:100%;'><a href='https://soundtemple2.github.io/audio.html?para={%22ytid%22:%22qN4ooNx77u0%22}' target='blank'><img src="https://i0.wp.com/ratexblog.files.wordpress.com/2020/02/screenshot_2020-02-24-23-54-21-024_com.android.chrome.png?ssl=1" style="width:100%"></a></div>-->
-	<div style='padding:0.5px 1px 0.5px 1px; width:100%;'><a href=''><img src="https://raw.githubusercontent.com/subham99saha/images/main/mobile%20templates%20(3).jpg" style="width:100%"></a></div>
+	<div style='padding:0.5px 1px 0.5px 1px; width:100%;'><a href=''><img src="https://raw.githubusercontent.com/subham99saha/images/main/mobile%20templates%20(6).jpg" style="width:100%"></a></div>
+  <div style='padding:0.5px 1px 0.5px 1px; width:100%;'><a href=''><img src="https://raw.githubusercontent.com/subham99saha/images/main/mobile%20templates%20(3).jpg" style="width:100%"></a></div>
 	<div style='padding:0.5px 1px 0.5px 1px; width:100%;'><a href=''><img src="https://raw.githubusercontent.com/subham99saha/images/main/mobile%20templates.jpg" style="width:100%"></a></div>      
       </div>
 
@@ -86,6 +120,7 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
         <!--<div style='padding:0.5px 1px 0.5px 1px; width:100%;'><a href='https://ratexblog.wordpress.com' target='blank'><img src="https://ratexblog.files.wordpress.com/2019/09/most-instagram-followers-1.jpg?w=1100" style="width:100%"></a></div>
         <div style='padding:0.5px 1px 0.5px 1px; width:100%;'><a href='http://ratex.ml/subham99saha' target='blank'><img src="https://i0.wp.com/ratexblog.files.wordpress.com/2019/09/screenshot_2019-09-08-16-40-22-619_com.android.chrome.png?ssl=1" style="width:100%"></a></div>
         <div style='padding:0.5px 1px 0.5px 1px; width:100%;'><a href='http://soundtemple2.github.io' target='blank'><img src="https://i2.wp.com/ratexblog.files.wordpress.com/2020/02/screenshot_2020-02-24-23-46-31-183_com.android.chrome.png?ssl=1" style="width:100%"></a></div>-->
+        <div style='padding:0.5px 1px 0.5px 1px; width:100%;'><a href=''><img src="https://raw.githubusercontent.com/subham99saha/images/main/mobile%20templates%20(4).jpg" style="width:100%"></a></div>
       	<div style='padding:0.5px 1px 0.5px 1px; width:100%;'><a href=''><img src="https://raw.githubusercontent.com/subham99saha/images/main/mobile%20templates%20(1).jpg" style="width:100%"></a></div>
 	<div style='padding:0.5px 1px 0.5px 1px; width:100%;'><a href=''><img src="https://raw.githubusercontent.com/subham99saha/images/main/mobile%20templates%20(2).jpg" style="width:100%"></a></div>
       </div>
