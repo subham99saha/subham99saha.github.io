@@ -24,7 +24,7 @@
 .col-xl-4{
   padding:0;
 }
-.col-xl-12{
+.col-xl-6{
   padding:5%;
 }
 .col-sm-nest {
@@ -43,10 +43,10 @@
   background-image: url('https://raw.githubusercontent.com/subham99saha/sample-templates-images/main/1395.ngsversion.1467942029765.adapt.1900.1.jpg')
 }
 .bgimg2 {
-  background-position: center;
-  background-size: auto 100%;
+  background-position: 50% -1%;
+  background-size: auto 65%;
 
-  background-image: url('https://raw.githubusercontent.com/subham99saha/images/main/mobile%20templates%20(4).jpg')
+  background-image: url('https://raw.githubusercontent.com/subham99saha/sample-templates-images/main/a098916c1cea2a2b42ff18e6ddbbd013.jpg')
 }
 .bgimg3 {
   background-position: center;
@@ -85,9 +85,9 @@
    right: 5%;
    text-align: right;
    font-size: .8em;
-   font-family: ;
+   font-family: calibri;
    color: white;
-   font-weight:;
+   font-weight: lighter;
    line-height: 110%;
    opacity: .9;
 
@@ -112,7 +112,7 @@
    font-weight:;
    line-height: 110%;
    opacity: .8;
-   padding: 2%;
+   padding: 2% 2% 1% 2%;
 
    //transform:translate(-50%,-50%);
    
@@ -153,11 +153,11 @@
    right: 50%;
    text-align: right;
    font-size: .8em;
-   font-family: ;
+   font-family: calibri;
    color: white;
-   font-weight:;
+   font-weight: lighter;
    line-height: 130%;
-   opacity:.8;
+   opacity:;
    padding:1%;
 
    //transform:translate(-50%,-50%);
@@ -190,12 +190,121 @@
    
    background:;
 }
+.text7 {
+   position: absolute;
+   width:;
+   top: 40%;
+   left: 10%;   
+   right: 10%;
+   //bottom: 0%;
+   text-align: center;
+   font-size: 3em;
+   font-family: homemade apple;
+   color: white;
+   font-weight:;
+   line-height: 110%;
+   opacity:;
+   padding:;
+
+   //transform:translate(-50%,-50%);
+   
+   transform-origin: 50% 50%;
+   transform: rotate(-35deg);
+   
+   background:;
+}
+.text8 {
+   position: absolute;
+   width:40%;
+   top: 70%;
+   left: 50%;
+   //bottom: 10%;
+   //right: 50%;
+   text-align: left;
+   font-size: .75em;
+   font-family: calibri;
+   color: orange;
+   font-weight: lighter;
+   line-height: 110%;
+   opacity:;
+   padding:2%;
+
+   //transform:translate(-50%,-50%);
+   
+   //transform-origin: 0% 0%;
+   //transform: rotate(90deg);
+   
+   background:;
+}
+.text9 {
+   position: absolute;
+   width:40%;
+   top: 70%;
+   //left: 0%;
+   //bottom: 10%;
+   right: 50%;
+   text-align: right;
+   font-size: .75em;
+   font-family: calibri;
+   color: orange;
+   font-weight: lighter;
+   line-height: 110%;
+   opacity:;
+   padding:2%;
+
+   //transform:translate(-50%,-50%);
+   
+   //transform-origin: 0% 0%;
+   //transform: rotate(90deg);
+   
+   background:;
+}
+.text10 {
+   position: absolute;
+   width:;
+   top: 3%;
+   left: 10%;   
+   right: 10%;
+   //bottom: 0%;
+   text-align: center;
+   font-size: 1em;
+   font-family: homemade apple;
+   color: orange;
+   font-weight:;
+   line-height: 110%;
+   opacity:;
+   padding:;
+
+   //transform:translate(-50%,-50%);
+   
+   //transform-origin: 50% 50%;
+   //transform: rotate(-35deg);
+   
+   background:;
+}
 </style>
   
 <body>
   <!--<div style='width:100%; background: blue;'>hello</div>-->
 <div class="container-fluid">
-  <div class="row">    
+  <div class="row">   
+    <div class="col-xl-4" style='background: white;'>      
+      <div class='col-sm-nest bgimg bgimg2'>
+        <div class='text10'>
+          Model &nbsp;x&nbsp; Actor
+        </div>
+        <div class='text7'>
+          *Randall<br> Stevens*
+        </div> 
+        <div class='text8'>  
+          <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+        </div> 
+        <div class='text9'>  
+          <p>The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, making it look like readable English.</p>
+        </div>
+      </div>
+    </div>
+
     <div class="col-xl-4" style='background: pink;'>
       <div class='col-sm-nest bgimg bgimg3'>  
         <div class='text1'>  
@@ -231,19 +340,16 @@
           &copy; Lorem Ipsum PPP 2020
         </div>   
       </div>
-    </div>    
-        
-    <div class="col-xl-4" style='background: white;'>      
-      <div class='col-sm-nest bgimg bgimg2'>
-        <div class='text1'>
-          
-        </div>  
-      </div>
-    </div>
+    </div>  
+           
   </div>
 
   <div class="row">
-    <div class="col-xl-12" style='background: grey;'>
+    <div class="col-xl-6" style='background: #ffffcc;'>
+      <p>hello! i'm a footer.</p>
+      <p style='font-size:.8em'>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
+    </div>
+    <div class="col-xl-6" style='background: #ffffe6;'>
       hello! i'm a footer.
     </div>
   </div>
