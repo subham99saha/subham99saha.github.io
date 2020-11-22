@@ -1,7 +1,7 @@
 .container{
   
 }
-.col-sm-4{
+.col-xl-4{
   padding:0;
 }
 .col-xl-6{
@@ -48,9 +48,9 @@
 }
 .bgimg5 {
   background-position: center;
-  background-size: auto 100%;
+  background-size: cover;
 
-  //background-image: url('https://github.com/subham99saha/images/blob/main/IMG_20201120_210652.jpg?raw=true')
+  background-image: url('media/b64edf6cccdfad7464f781afbb4131f4.jpg')
 }
 .bgimg6 {
   background-position: center;
@@ -67,7 +67,7 @@
    //bottom: 50%;
    //right: 5%;
    text-align: left;
-   font-size: 4em;
+   font-size: 8vh;
    font-family: Oswald;
    color: #333333;
    font-weight: bold;
@@ -88,11 +88,11 @@
    bottom: 20%;
    right: 5%;
    text-align: right;
-   font-size: .8em;
-   font-family: calibri;
+   font-size: 1.7vh;
+   font-family: quicksand;
    color: white;
    font-weight: lighter;
-   line-height: 110%;
+   line-height: 130%;
    opacity: .9;
 
    //transform:translate(-50%,-50%);
@@ -110,7 +110,7 @@
    bottom: 20%;
    //right: 5%;
    text-align: right;
-   font-size: 2em;
+   font-size: 4vh;
    font-family:;
    color: white;
    font-weight:;
@@ -133,7 +133,7 @@
    bottom: 8%;
    //right: 5%;
    text-align: right;
-   font-size: .6em;
+   font-size: 1.4vh;
    font-family:;
    color: black;
    font-weight:;
@@ -156,8 +156,8 @@
    bottom: 6%;
    right: 50%;
    text-align: right;
-   font-size: .8em;
-   font-family: calibri;
+   font-size: 1.5vh;
+   font-family: quicksand;
    color: white;
    font-weight: lighter;
    line-height: 130%;
@@ -179,7 +179,7 @@
    bottom: 6%;
    //right: 50%;
    text-align: right;
-   font-size: 2em;
+   font-size: 5vh;
    font-family: ;
    color: blue;
    font-weight:;
@@ -202,7 +202,7 @@
    right: 10%;
    //bottom: 0%;
    text-align: center;
-   font-size: 3em;
+   font-size: 5.5vh;
    font-family: homemade apple;
    color: white;
    font-weight:;
@@ -225,11 +225,11 @@
    //bottom: 10%;
    //right: 50%;
    text-align: left;
-   font-size: .75em;
-   font-family: calibri;
+   font-size: 1.5vh;
+   font-family: quicksand;
    color: orange;
    font-weight: lighter;
-   line-height: 110%;
+   line-height: 130%;
    opacity:;
    padding:2%;
 
@@ -248,11 +248,11 @@
    //bottom: 10%;
    right: 50%;
    text-align: right;
-   font-size: .75em;
-   font-family: calibri;
+   font-size: 1.5vh;
+   font-family: quicksand;
    color: orange;
    font-weight: lighter;
-   line-height: 110%;
+   line-height: 130%;
    opacity:;
    padding:2%;
 
@@ -271,7 +271,7 @@
    right: 10%;
    //bottom: 0%;
    text-align: center;
-   font-size: 1em;
+   font-size: 2.5vh;
    font-family: homemade apple;
    color: orange;
    font-weight:;
