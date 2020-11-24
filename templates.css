@@ -1,7 +1,7 @@
 .container{
   
 }
-.col-lg-4{
+.col-xl-4{
   padding:0;
 }
 .col-xl-6{
@@ -47,8 +47,8 @@
   background-image: url('https://raw.githubusercontent.com/subham99saha/sample-templates-images/main/3c15b22ae1759f9f05322b00ce3aa689.jpg')
 }
 .bgimg5 {
-  background-position: 45% 0%;
-  background-size: auto 190%;
+  background-position: 45% 10%;
+  background-size: auto 220%;
 
   background-image: url("https://raw.githubusercontent.com/subham99saha/sample-templates-images/main/4070c3810217713e49f37acc181fd08d.jpg");
   //background-image: url('https://raw.githubusercontent.com/subham99saha/sample-templates-images/main/b64edf6cccdfad7464f781afbb4131f4.jpg')
