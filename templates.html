@@ -6,13 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Google fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Alfa+Slab+One|Playfair +Display|Homemade+Apple|Oswald|Cookie|Quicksand|Amatic+SC|Roboto+Mono|Six+Caps|Dancing+Script|Satisfy|Indie+Flower|Lobster&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Alfa+Slab+One|Playfair +Display|Homemade+Apple|Oswald|Cookie|Quicksand|Amatic+SC|Roboto+Mono|Montserrat|Six+Caps|Dancing+Script|Monoton|Satisfy|Indie+Flower|Lobster&display=swap" rel="stylesheet">
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link href="/your-path-to-fontawesome/css/fontawesome.css" rel="stylesheet">
-    <link href="/your-path-to-fontawesome/css/brands.css" rel="stylesheet">
-    <link href="/your-path-to-fontawesome/css/solid.css" rel="stylesheet">
     
     <!-- font awesome icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -21,11 +18,12 @@
     <title>TEMPLATES | SUBHAM SAHA</title>
   </head>
  
+<script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+
 <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script> 
 <script>
 $(document).ready(function(){
   $(".col-xl-4").dblclick(function(){
-    //alert("The paragraph was double-clicked.");
     window.scrollTo(0, $(this).offset().top);
   });
 });
@@ -48,51 +46,94 @@ $(document).ready(function(){
 <body>
   <!--<div style='width:100%; background: blue;'>hello</div>-->
 <div class="container-fluid">
+  
+
+  <div class="row">
+    <div class="col-xl-6" style='background: #ffffcc;'>
+      <p>hello! i'm a footer.</p>
+      <p style='font-size:.8em'>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
+    </div>
+    <div class="col-xl-6" style='background: #ffffe6;'>
+      <span onclick='openFullscreen()'>Click to go full screen.</span>
+    </div>
+  </div>
+    
+
   <div class="row">
 
-    <div id='haha' class="col-xl-4" style='background: black; z-index:-1;'>      
-      <div class='col-sm-nest bgimg bgimg5' style='z-index:; overflow:hidden;'>
-        <!--<div class="" style='background:red; position: absolute; top:20%; left:5%; right:5%; width:; height:30%; text-align:right; font-family: oswald; font-size: 4.5vh; color: white; line-height:100%; padding:1%; transform-origin: 50% 50%; transform: rotate(-90deg);'>-->
-
-        <div style='position: absolute; width:100%; height:100%; left: 0; right: 0; top: 0; bottom: 0; background:rgba(0,0,0,0.05);'>
-         
-        </div>
-          
-        <div class='text1' style='font-family:; font-size:; color:white; width:120%; top:0; left:110%; opacity:;' >
-            <!--<p>SO, WHAT DO YOU WANT US TO WRITE ABOUT?</p>-->
-            <p>GHOST WRITING<br>
-            COPY WRITING<br>
-            CONTENT WRITING<br>
-            SOFTWARE<br>
-            BUSINESS<br>
-            TECHNOLOGY<br>
-            NEWS<br>
-            DESCRIPTION<br>
-            GHOST WRITING<br>
-            COPY WRITING<br>
-            CONTENT WRITING<br>
-            SOFTWARE<br>
-            BUSINESS<br>
-            TECHNOLOGY<br>
-            NEWS<br>
-            DESCRIPTION<br>
-            GHOST WRITING<br>
-            COPY WRITING<br>
-            CONTENT WRITING<br>
-            SOFTWARE<br>
-            BUSINESS<br>
-            TECHNOLOGY<br>
-            NEWS<br>
-            DESCRIPTION<br>
-          </p>
+    <div class="col-xl-4" style='background: black;'>      
+      <div id='par7' class='col-sm-nest bgimg bgimg7' style='z-index:; overflow: hidden;'>
+        
+        <div id='child7' style='position:absolute; font-family:; font-size:; text-align:left; color:black; background:white; width:80%; height:17vh; bottom:0%; left:0; line-height:; opacity:1; transform-origin: 0 0; transform: rotate(-90deg);' >
+            <div style='float:left; font-family:Oswald; color:orange; font-size:5vh; padding:2.5%; line-height:100%; width:33.33%;'><p>LOREM IPSUM </p></div>
+            <div style='float:right; text-align:right; font-family:quicksand; font-size:1.5vh; padding:2.5%; width:33.33%; line-height:;'><p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem</p></div>
+            <div style='float:left; font-family:quicksand; text-align:right; opacity:.8; font-size:1.5vh; padding:2%; width:33.33%;'><p><i>Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text</i></p></div>
         </div>
 
-        <div style='position: absolute; width:; /*top: 40%; right: 0;*/ left: 90%; bottom: 1%; text-align: right; font-size: 3vh; font-family: quicksand; color: white; font-weight:; line-height: 110%; opacity:; padding:; transform-origin: 0% 0%; transform: rotate(270deg); /*-webkit-text-stroke-width: .25px; -webkit-text-stroke-color: white;*/'>
-          @milliesarahs
+        <div style='position:absolute; top:2%; right:3%; color:white; font-size:5vh; padding:0 2%; background:orange;'><span class="iconify" data-icon="bi:three-dots" data-inline="false"></span></div>
+
+        <script type="text/javascript">
+          function changeDim(){
+            var child7 = document.getElementById("child7");
+            var par7 = document.getElementById("par7");
+            child7.style.width = par7.offsetHeight + "px";
+            child7.style.bottom = "-" + child7.offsetHeight + "px";
+          } 
+          window.addEventListener("resize", changeDim);
+          changeDim(); 
+        </script>
+
+      </div>
+    </div>
+
+    <div class="col-xl-4" style='background:black;'>      
+      <div class='col-sm-nest bgimg bgimg8' style=''>
+      </div>
+    </div>
+
+    <div class="col-xl-4" style='background:;'>      
+      <div class='col-sm-nest bgimg bgimg9' style='font-weight:500; font-size:25vh; font-family:;'>
+        <div style='position:absolute; top:2%; left:5%; width:120%; color:rgba(255,0,0,1); text-align:left; font-family:monoton;'>LO</div>
+        <div style='position:absolute; top:20%; left:5%; width:120%; color:rgba(0,0,0,.9); text-align:left; font-family:homemade apple; z-index:2;'>RE</div>
+        <div style='position:absolute; top:30%; left:5%; width:120%; color:rgba(255,0,0,1); text-align:left; font-family:monoton;'>MI<span style='font-weight:700;'></span></div>
+      </div>
+    </div>
+
+  </div>
+
+
+  <div class="row">
+    <div class="col-xl-6" style='background: #ffffcc;'>
+      <p>hello! i'm a footer.</p>
+      <p style='font-size:.8em'>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
+    </div>
+    <div class="col-xl-6" style='background: #ffffe6;'>
+      <span onclick='openFullscreen()'>Click to go full screen.</span>
+    </div>
+  </div>
+    
+
+  <div class="row">
+    <script>
+      $(document).ready(function(){
+        for(var i = 0; i < 10; i++){  
+          $('#txtrpt').append('Ghost Writing Copy Writing Content Writing Software Business Technology News Description ');
+        }  
+      });  
+    </script>
+    <div class="col-xl-4" style='background: #ffb3bf;'>      
+      <div class='col-sm-nest bgimg bgimg6' style='overflow:hidden;'>
+        
+        <div class='text1' style='font-family: homemade apple; font-size:; text-align:left; color:white; width:400%; top:0; left:100%; opacity:.2; line-height:110%; transform: rotate(90deg); z-index:2;' >
+            <p id='txtrpt' ></p>
         </div>
 
-        <div class='text2' style='left:5%; bottom:6%; text-align:left; '>
-          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+        <div style='position:absolute; top:10%; right:15%; left:15%; width:70%; background:; text-align:; color:white; font-size:1.2vh;'>
+          There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</div>
+        <div style='position:absolute; bottom:10%; right:10%; left:10%; width:80%; background:; color:white;'>  
+          <p style='font-size:8vh; font-family:oswald; line-height:100%; margin:;'>Lorem Ipsum</p>
+          <p style='font-size:3vh; line-height:100%; text-transform:uppercase;'>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit</p>
+          <p style='font-size:1.3vh; margin:0;'>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem</p>
         </div>
       </div>
     </div>
@@ -120,12 +161,34 @@ $(document).ready(function(){
       </div>
     </div>
 
+    <div id='' class="col-xl-4" style='background: black; z-index:-1;'>      
+      <div class='col-sm-nest bgimg bgimg5' style='z-index:; overflow:hidden;'>
+       
+        <div style='position: absolute; width:100%; height:100%; left: 0; right: 0; top: 0; bottom: 0; background:rgba(0,0,0,0.05);'>
+         
+        </div>
+        <script>
+          $(document).ready(function(){
+            for(var i = 0; i < 5; i++){  
+              $('#listrpt').append('GHOST WRITING<br> COPY WRITING<br> CONTENT WRITING<br> SOFTWARE<br> BUSINESS<br> TECHNOLOGY<br> NEWS<br> DESCRIPTION<br>');
+            }  
+          });  
+        </script>  
+        <div class='text1' style='font-family:; font-size:; color:white; width:120%; top:0; left:110%; opacity:;' >
+          <p id='listrpt'>
+          </p>
+        </div>
 
-    <div class="col-xl-4" style='background: black;'>      
-      <div class='col-sm-nest bgimg bgimg6'>
-        
+        <div style='position: absolute; width:; /*top: 40%; right: 0;*/ left: 90%; bottom: 1%; text-align: right; font-size: 3vh; font-family: quicksand; color: white; font-weight:; line-height: 110%; opacity:; padding:; transform-origin: 0% 0%; transform: rotate(270deg); /*-webkit-text-stroke-width: .25px; -webkit-text-stroke-color: white;*/'>
+          @milliesarahs
+        </div>
+
+        <div class='text2' style='left:5%; bottom:6%; text-align:left; '>
+          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+        </div>
       </div>
     </div>
+
   </div>
 
   <div class="row">
