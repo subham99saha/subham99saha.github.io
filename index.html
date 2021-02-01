@@ -1,337 +1,282 @@
-<!DOCTYPE html>
-<html>
-<title>SUBHAM SAHA</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Homemade+Apple|Oswald|Cookie|Quicksand|Amatic+SC|Dancing+Script|Satisfy|Indie+Flower|Lobster&display=swap" rel="stylesheet">
-<script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
-<style>
-body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
-.w3-row-padding img {margin-bottom: 12px}
-.bgimg {
-  	
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-image: url('https://i2.wp.com/ratexblog.files.wordpress.com/2020/02/20191001134400_img_3548.jpg?ssl=1');
-  //background-image: url('https://i0.wp.com/ratexblog.files.wordpress.com/2020/11/screenshot_2020-11-18-21-25-58-255_com.miui_.gallery.png?ssl=1');
-  min-height: 100%;
-}
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-@keyframes sample {
-  from {background-color: pink;}
-  to {background-color: yellow;}
-}
+    <!-- Google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Alfa+Slab+One|Playfair +Display|Homemade+Apple|Oswald|Cookie|Quicksand|Amatic+SC|Roboto+Mono|Montserrat|Six+Caps|Dancing+Script|Monoton|Satisfy|Indie+Flower|Lobster&display=swap" rel="stylesheet">
 
-/*body {
-  animation-name: sample;
-  animation-duration: 60s;
-}*/
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    
+    <!-- font awesome icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-.template{
-  transition: opacity .5s;
-}
-</style>
+    <link rel="stylesheet" href="templates.css">
+    <title>TEMPLATES | SUBHAM SAHA</title>
+  </head>
+ 
 <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+
+<script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script> 
 <script>
-
-  $(window).scroll(function() {
-   var hT1 = $('#portfolio').offset().top,
-       hT2 = $('#about').offset().top,
-       hH = $('#portfolio').outerHeight(),
-       wH = $(window).height(),
-       wS = $(this).scrollTop();
-   if ((wS > hT1) && (wS < hT2)){
-       jQuery('#bgimage').css('opacity', '0.05');
-       //jQuery('#bgimage').animate({opacity: '0.2'}, "slow");
-      
-   }else{
-      jQuery('#bgimage').css('opacity', '1');
-      //jQuery('#bgimage').animate({opacity: '1'}, "slow");
-   }
-
+$(document).ready(function(){
+  $(".col-xl-4").dblclick(function(){
+    window.scrollTo(0, $(this).offset().top);
+  });
 });
-   
-   
 
-</script>
+  var elem = document.documentElement;
+  function openFullscreen() {
+      if (elem.requestFullscreen) {
+      elem.requestFullscreen();
+      } else if (elem.mozRequestFullScreen) { /* Firefox */
+      elem.mozRequestFullScreen();
+      } else if (elem.webkitRequestFullscreen) { /* Chrome, Safari & Opera */
+      elem.webkitRequestFullscreen();
+      } else if (elem.msRequestFullscreen) { /* IE/Edge */
+      elem.msRequestFullscreen();
+      }
+  }
+
+</script> 
 
 <body>
-
-<!-- Sidebar with image -->
-<nav class="w3-sidebar w3-hide-medium w3-hide-small" style="width:40%; padding: 5%;">
-  <div class="bgimg" id='bgimage' style='transition: opacity 1s;'></div>
-</nav>
-
-<!-- Hidden Sidebar (reveals when clicked on menu icon)-->
-<nav class="w3-sidebar w3-black w3-animate-right w3-xxlarge" style="display:none;padding-top:150px;right:0;z-index:2;opacity:0.95;" id="mySidebar">
-  <a href="javascript:void(0)" onclick="closeNav()" class="w3-button w3-black w3-xxxlarge w3-display-topright" style="padding:0 12px;">
-    <i class="fa fa-remove"></i>
-  </a>
-  <div class="w3-bar-block w3-center">
-    <a href="#portfolio" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Portfolio</a>
-    <a href="#about" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">About</a>
-    <a href="#skills" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Skills</a>
-    <a href="#contact" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Contact</a>
-  </div>
-</nav>
-
-<!-- Page Content -->
-<div class="w3-main w3-padding-large" id='pgcont' style="margin-left:40%;">
-
-  <!-- Menu icon to open sidebar -->
-  <span class="w3-button w3-top w3-white w3-xxlarge w3-text-grey w3-hover-text-black" style="width:auto;right:0;" onclick="openNav()"><i class="fa fa-bars"></i></span>
-
-  <!-- Header -->
-  <header class="w3-container w3-center" style="padding:98px 16px;" id="home">
-    <h1 style=' text-align:left; font-size:200%;'><b>Subham Saha</b></h1>
-    <p style='font-family:oswald; font-size:300%; text-align:left;'>I DESIGN WEBSITES <br> <span style='color:rgba(0,0,0,0.3);'>I ALSO WRITE CONTENT</span></p>
-    <img src="https://i2.wp.com/ratexblog.files.wordpress.com/2020/02/20191001134400_img_3548.jpg?ssl=1" class="w3-image w3-hide-large w3-hide-small w3-round" style="display:block;width:60%;margin:auto;">
-    <img src="https://i2.wp.com/ratexblog.files.wordpress.com/2020/02/20191001134400_img_3548.jpg?ssl=1" class="w3-image w3-hide-large w3-hide-medium w3-round" width="1000" height="1333">
-    <!--<button class="w3-button w3-light-grey w3-padding-large w3-margin-top" style=' text-align:left;'>
-      <i class="fa fa-download"></i> Download Resume
-    </button>-->
-  </header>
-
-  <!-- Portfolio Section -->
-  <div class="w3-padding-32 w3-content" id="portfolio">
-    <h2 class="w3-text-grey">My Portfolio</h2>
-    <hr class="w3-opacity">
-	  
-	  <!--<div style="padding:100% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/456240931?autoplay=1&color=ff0179&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>-->
-	  
-	<p><br>My Templates</p>
-	<p style='font-size:10px; color:rgba(0,0,0,0.4);'>I own the designs and not the images associated with it. The images are solely used for the purpose of adding structure to the layouts.</p>
-    <!-- Grid for photos -->
-    <div class="w3-row-padding" style="margin:0 -16px; background:;">
-      <!--<div class="w3-half" style="background:yellow;">-->
-      <div style="background:; width:50%; float:left; padding:1%;">
-        <!--<img src="https://ratexblog.files.wordpress.com/2019/09/img_20190908_162626.png?w=599" style="width:100%">
-        <img src="https://ratexblog.files.wordpress.com/2019/09/img_20190902_111431.png" style="width:100%">-->
-        <!--<div style='padding:0.5px 1px 0.5px 1px; width:100%;'><a href='http://ratex.ml' target='blank'><img src="https://ratexblog.files.wordpress.com/2019/09/img_20190828_201101.png" style="width:100%"></a></div>
-        <div style='padding:0.5px 1px 0.5px 1px; width:100%;'><a href='http://soundtemple2.github.io' target='blank'><img src="https://i1.wp.com/ratexblog.files.wordpress.com/2020/02/soundtemple.png?ssl=1" style="width:100%"></a></div>
-        <div style='padding:0.5px 1px 0.5px 1px; width:100%;'><a href='https://soundtemple2.github.io/audio.html?para={%22ytid%22:%22qN4ooNx77u0%22}' target='blank'><img src="https://i0.wp.com/ratexblog.files.wordpress.com/2020/02/screenshot_2020-02-24-23-54-21-024_com.android.chrome.png?ssl=1" style="width:100%"></a></div>-->
-  <div class='template' style='padding:0.5px 1px 0.5px 1px; width:100%; //margin-bottom:35%;'><a href=''><img src="https://raw.githubusercontent.com/subham99saha/images/main/IMG_20201123_225130.jpg" style="width:100%"></a></div>
-  <div class='template' style='padding:0.5px 1px 0.5px 1px; width:100%; //margin-bottom:35%;'><a href=''><img src="https://github.com/subham99saha/images/blob/main/Screenshot_2020-11-25-13-19-16-741_com.android.chrome.png?raw=true" style="width:100%"></a></div>
-  <div class='template' style='padding:0.5px 1px 0.5px 1px; width:100%; //margin-bottom:35%;'><a href=''><img src="https://raw.githubusercontent.com/subham99saha/images/main/IMG_20201120_210555.jpg" style="width:100%"></a></div>
-	<div class='template' style='padding:0.5px 1px 0.5px 1px; width:100%; //margin-bottom:35%;'><a href=''><img src="https://raw.githubusercontent.com/subham99saha/images/main/mobile%20templates%20(6).jpg" style="width:100%"></a></div>
-  <div class='template' style='padding:0.5px 1px 0.5px 1px; width:100%; //margin-bottom:35%;'><a href=''><img src="https://raw.githubusercontent.com/subham99saha/images/main/mobile%20templates%20(3).jpg" style="width:100%"></a></div>
-	<div class='template' style='padding:0.5px 1px 0.5px 1px; width:100%;'><a href=''><img src="https://raw.githubusercontent.com/subham99saha/images/main/mobile%20templates.jpg" style="width:100%"></a></div>           
-      </div>
-
-      <div style="background:; width:50%; float:left; padding:1%;">
-        <!--<img src="https://ratexblog.files.wordpress.com/2019/09/img_20190908_162626.png?w=599" style="width:100%">
-        <img src="https://ratexblog.files.wordpress.com/2019/09/screenshot_2019-09-08-16-40-22-619_com.android.chrome.png?w=603" style="width:100%">
-        <img src="https://ratexblog.files.wordpress.com/2019/09/img_20190828_201101.png" style="width:100%">-->
-        <!--<div style='padding:0.5px 1px 0.5px 1px; width:100%;'><a href='https://ratexblog.wordpress.com' target='blank'><img src="https://ratexblog.files.wordpress.com/2019/09/most-instagram-followers-1.jpg?w=1100" style="width:100%"></a></div>
-        <div style='padding:0.5px 1px 0.5px 1px; width:100%;'><a href='http://ratex.ml/subham99saha' target='blank'><img src="https://i0.wp.com/ratexblog.files.wordpress.com/2019/09/screenshot_2019-09-08-16-40-22-619_com.android.chrome.png?ssl=1" style="width:100%"></a></div>
-        <div style='padding:0.5px 1px 0.5px 1px; width:100%;'><a href='http://soundtemple2.github.io' target='blank'><img src="https://i2.wp.com/ratexblog.files.wordpress.com/2020/02/screenshot_2020-02-24-23-46-31-183_com.android.chrome.png?ssl=1" style="width:100%"></a></div>-->
-        <div style='padding:0.5px 1px 0.5px 1px; position:relative; width:100%; padding-top:88.89%;'></div>
-        <div class='template' style='padding:0.5px 1px 0.5px 1px; width:100%; //margin-top:35%;'><a href=''><img src="https://github.com/subham99saha/images/blob/main/IMG_20201120_210652.jpg?raw=true" style="width:100%"></a></div>
-        <div class='template' style='padding:0.5px 1px 0.5px 1px; width:100%; //margin-top:35%;'><a href=''><img src="https://github.com/subham99saha/images/blob/main/IMG_20201120_210728.jpg?raw=true" style="width:100%"></a></div>
-        <div class='template' style='padding:0.5px 1px 0.5px 1px; width:100%; //margin-top:35%;'><a href=''><img src="https://raw.githubusercontent.com/subham99saha/images/main/mobile%20templates%20(4).jpg" style="width:100%"></a></div>
-      	<div class='template' style='padding:0.5px 1px 0.5px 1px; width:100%; //margin-top:35%;'><a href=''><img src="https://raw.githubusercontent.com/subham99saha/images/main/mobile%20templates%20(1).jpg" style="width:100%"></a></div>
-	      <div class='template' style='padding:0.5px 1px 0.5px 1px; width:100%; //margin-top:35%;'><a href=''><img src="https://raw.githubusercontent.com/subham99saha/images/main/mobile%20templates%20(2).jpg" style="width:100%"></a></div>
-      </div>
-    <!-- End photo grid -->
-    </div>
-  <!-- End Portfolio Section -->
-  </div>
-
-  <!-- About Section -->
+  <!--<div style='width:100%; background: blue;'>hello</div>-->
+<div class="container-fluid">
   
-  
-  <div class="w3-content w3-justify w3-text-grey w3-padding-32" id="about">
-    <h2>About</h2>
-    <hr class="w3-opacity">
-    <p><span style='color:rgba(0,0,0,0.5);'><i>I am currently a student pursuing a degree in Mechanical Engineering. </i></span><p>
-	<p>I freelance as a web developer and content writer. I have been and also presently am a part of several projects that mainly involve startups and budding businesses. 
-	In terms of web apps, I have experience in categories like e-commerce, social networks and blogs. Though I am always willing to discover new horizons, my favourites include blogs and social applications.
-    </p>
-	<p>As a content writer, I have worked for around 2 years with several companies and have written over 200 blogs and articles.
-	</p>
-	  
-	 <div style='width:100%; height:30vw; color:white; text-align:center; font-size:10vw;'>
-	  <a href='https://www.fiverr.com/share/pw9qgp' target='blank'><div style='width:33.33%; height:100%; float:left; text-align:center; line-height:30vw; background:#4d4d4d;'><span class="iconify" data-icon="jam-fiverr" data-inline="false"></span></div></a>
-	  <a href='https://www.upwork.com/freelancers/~0103fb7e88413113ca' target='blank'><div style='width:33.33%; height:100%; float:left; text-align:center; line-height:30vw; background:#737373;'><span class="iconify" data-icon="cib:upwork" data-inline="false"></span></div></a>
- 	  <a href='www.linkedin.com/in/subham99saha' target='blank'><div style='width:33.33%; height:100%; float:left; text-align:center; line-height:30vw; background:#999999;'><span class="iconify" data-icon="bx:bxl-linkedin" data-inline="false"></span></div></a>
-	 </div>
-	  
-<h3 class="w3-padding-16" id="skills">My Skills</h3>
-	<h4 class="w3-padding-16" style="color:black;"><b>Website</b></h4>
-	<h6 class="w3-padding-16" style="color:black;"><b>Development</b></h6>
-    <p class="w3-wide">PHP</p>
-    <div class="w3-light-grey">
-      <div class="w3-container w3-center w3-padding-small w3-dark-grey" style="width:95%">95%</div>
-    </div>
-    <p class="w3-wide">MySQL</p>
-    <div class="w3-light-grey">
-      <div class="w3-container w3-center w3-padding-small w3-dark-grey" style="width:85%">90%</div>
-    </div>
-    <p class="w3-wide">JavaScript</p>
-    <div class="w3-light-grey">
-      <div class="w3-container w3-center w3-padding-small w3-dark-grey" style="width:80%">80%</div>
-    </div>
-    <p class="w3-wide">WordPress(.org)</p>
-    <div class="w3-light-grey">
-      <div class="w3-container w3-center w3-padding-small w3-dark-grey" style="width:85%">85%</div>
-    </div>	  
-	<p class="w3-wide">Angular JS, Node JS</p>
-	<h6 class="w3-padding-16" style="color:black;"><b>Designing</b></h6>
-	<div class="w3-light-grey">
-      <div class="w3-container w3-center w3-padding-small w3-dark-grey" style="width:85%">85%</div>
-    </div><br>
 
-    <div class="w3-row w3-center w3-dark-grey w3-padding-16 w3-section">
-      <div class="w3-quarter w3-section">
-        <span class="w3-xlarge">3+ years</span><br>
-        Experience
-      </div>
-      <div class="w3-quarter w3-section">
-        <span class="w3-xlarge">8+</span><br>
-        Projects Done
-      </div>
-      <!--<div class="w3-quarter w3-section">
-        <span class="w3-xlarge">89+</span><br>
-        Happy Clients
-      </div>
-      <div class="w3-quarter w3-section">
-        <span class="w3-xlarge">150+</span><br>
-        Meetings
-      </div>-->
+  <div class="row">
+    <div class="col-xl-6" style='background: #ffffcc;'>
+      <p>hello! i'm a footer.</p>
+      <p style='font-size:.8em'>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
     </div>
-	<h4 class="w3-padding-16" style="color:black;"><b>Content Writing</b></h4>
-	<div class="w3-light-grey">
-      <div class="w3-container w3-center w3-padding-small w3-dark-grey" style="width:85%">85%</div>
-    </div><br>
-	<div class="w3-row w3-center w3-dark-grey w3-padding-16 w3-section">
-      <div class="w3-quarter w3-section">
-        <span class="w3-xlarge">2+ years</span><br>
-        Experience
-      </div>
-      <div class="w3-quarter w3-section">
-        <span class="w3-xlarge">5+</span><br>
-        Companies
-      </div>
-	  <div class="w3-quarter w3-section">
-        <span class="w3-xlarge">200+</span><br>
-        Articles
-      </div>
-      
+    <div class="col-xl-6" style='background: #ffffe6;'>
+      <span onclick='openFullscreen()'>Click to go full screen.</span>
     </div>
+  </div>
     
-  <!-- End About Section -->
-  </div>
-	<h2 id="miscellaneous">Miscellaneous</h2>
-    <hr class="w3-opacity">
-	<p style='font-size:10px; color:rgba(0,0,0,0.4);'>The following are experiments that I have been working on which are yet to be published or owned by anyone.</p>
-	<div style='width:100%; height:400px; background:white; padding:0px; overflow-x:auto; overflow-y:hidden; white-space:nowrap;'>
-	  <ul style='list-style:none; padding:3px;'>
-	  <li style='margin:0 10px; display:inline;'><img style='height:350px; width:auto;' src="https://ratexblog.files.wordpress.com/2020/03/screenshot_2018-11-17-23-23-52-293_com.android.chrome.png" style="width:100%"></li>
-	  <li style='margin:0 10px; display:inline;'><img style='height:350px; width:auto;' src="https://ratexblog.files.wordpress.com/2020/03/screenshot_2018-11-12-22-33-52-733_com.android.chrome.png" style="width:100%"></li>
-	  <li style='margin:0 10px; display:inline;'><img style='height:350px; width:auto;' src="https://ratexblog.files.wordpress.com/2020/03/screenshot_2018-11-06-12-20-46-109_com.android.chrome.png" style="width:100%"></li>
-	  <li style='margin:0 10px; display:inline;'><img style='height:350px; width:auto;' src="https://ratexblog.files.wordpress.com/2020/03/screenshot_2018-11-11-20-22-55-303_com.android.chrome.png" style="width:100%"></li>
-	  </ul>
-	</div>
-	<div style='width:100%; height:400px; background:white; padding:0px; overflow-x:auto; overflow-y:hidden; white-space:nowrap;'>
-	  <ul style='list-style:none; padding:3px;'>
-	  <li style='margin:0 10px; display:inline;'><img style='height:350px; width:auto;' src="https://ratexblog.files.wordpress.com/2020/03/cloudbio4.png" style="width:100%"></li>
-	  <li style='margin:0 10px; display:inline;'><img style='height:350px; width:auto;' src="https://ratexblog.files.wordpress.com/2020/03/cloudbio3.png" style="width:100%"></li>
-	  <li style='margin:0 10px; display:inline;'><img style='height:350px; width:auto;' src="https://ratexblog.files.wordpress.com/2020/03/cloudbio1.png" style="width:100%"></li>
-	  <li style='margin:0 10px; display:inline;'><img style='height:350px; width:auto;' src="https://ratexblog.files.wordpress.com/2020/03/cloudbio2.png" style="width:100%"></li>
-	  </ul>
-	</div>
-  <!-- Contact Section -->
-  <div class="w3-padding-32 w3-content w3-text-grey" id="contact" style="margin-bottom:64px">
-    <h2>Contact Me</h2>
-    <hr class="w3-opacity">
 
-    <div class="w3-section">
-	<table>
-      <tr><td style='padding:3% 0%;'><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i></td><td style='padding:3% 0%;'> Kolkata - 700152, West Bengal, India</td></tr>
-      <tr><td style='padding:3% 0%;'><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i></td><td style='padding:3% 0%;'> <b>Phone & WhatsApp -</b> 7044015977</td></tr>
-      <tr><td style='padding:3% 0%;'><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"></i></td><td style='padding:3% 0%;'> <b>Email -</b> subham99saha@gmail.com</td></tr>
-    </table>
-	</div>
+  <div class="row">
+
+    <div class="col-xl-4" style='background: black;'>      
+      <div id='par7' class='col-sm-nest bgimg bgimg7' style='z-index:; overflow: hidden;'>
+        
+        <div id='child7' style='position:absolute; font-family:; font-size:; text-align:left; color:black; background:white; width:80%; height:17vh; bottom:0%; left:0; line-height:; opacity:1; transform-origin: 0 0; transform: rotate(-90deg);' >
+            <div style='float:left; font-family:Oswald; color:orange; font-size:5vh; padding:2.5%; line-height:100%; width:33.33%;'><p>LOREM IPSUM </p></div>
+            <div style='float:right; text-align:right; font-family:quicksand; font-size:1.5vh; padding:2.5%; width:33.33%; line-height:;'><p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem</p></div>
+            <div style='float:left; font-family:quicksand; text-align:right; opacity:.8; font-size:1.5vh; padding:2%; width:33.33%;'><p><i>Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text</i></p></div>
+        </div>
+
+        <div style='position:absolute; top:2%; right:3%; color:white; font-size:5vh; padding:0 2%; background:orange;'><span class="iconify" data-icon="bi:three-dots" data-inline="false"></span></div>
+
+        <script type="text/javascript">
+          function changeDim(){
+            var child7 = document.getElementById("child7");
+            var par7 = document.getElementById("par7");
+            child7.style.width = par7.offsetHeight + "px";
+            child7.style.bottom = "-" + child7.offsetHeight + "px";
+          } 
+          window.addEventListener("resize", changeDim);
+          changeDim(); 
+        </script>
+
+      </div>
+    </div>
+
+    <div class="col-xl-4" style='background:red;'>      
+      <div class='col-sm-nest bgimg bgimg8' style=''>
+      </div>
+    </div>
+
+    <div class="col-xl-4" style='background:;'>      
+      <div class='col-sm-nest bgimg bgimg9' style='font-weight:500; font-size:25vh; font-family:;'>
+        <div style='position:absolute; top:2%; left:5%; width:120%; color:rgba(255,0,0,1); text-align:left; font-family:monoton;'>LO</div>
+        <div style='position:absolute; top:20%; left:5%; width:120%; color:rgba(0,0,0,.9); text-align:left; font-family:homemade apple; z-index:2;'>RE</div>
+        <div style='position:absolute; top:30%; left:5%; width:120%; color:rgba(255,0,0,1); text-align:left; font-family:monoton;'>MI<span style='font-weight:700;'></span></div>
+      </div>
+    </div>
+
+  </div>
+
+
+  <div class="row">
+    <div class="col-xl-6" style='background: #ffffcc;'>
+      <p>hello! i'm a footer.</p>
+      <p style='font-size:.8em'>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
+    </div>
+    <div class="col-xl-6" style='background: #ffffe6;'>
+      <span onclick='openFullscreen()'>Click to go full screen.</span>
+    </div>
+  </div>
     
-    <!-- Image of location/map -->
-    <!--<img src="/w3images/map.jpg" class="w3-image w3-greyscale" style="width:100%;margin:32px 0">-->
-   
-    <!--<p>Lets get in touch. Send me a message:</p>
-    <form action="/action_page.php" target="_blank">
-      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Name" required name="Name"></p>
-      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Email" required name="Email"></p>
-      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Subject" required name="Subject"></p>
-      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Message" required name="Message"></p>
-      <p>
-        <button class="w3-button w3-light-grey w3-padding-large" type="submit">
-          <i class="fa fa-paper-plane"></i> SEND MESSAGE
-        </button>
-      </p>
-    </form>-->
-  <!-- End Contact Section -->
-  </div>  
+
+  <div class="row">
+    <script>
+      $(document).ready(function(){
+        for(var i = 0; i < 10; i++){  
+          $('#txtrpt').append('Ghost Writing Copy Writing Content Writing Software Business Technology News Description ');
+        }  
+      });  
+    </script>
+    <div class="col-xl-4" style='background: #ffb3bf;'>      
+      <div class='col-sm-nest bgimg bgimg6' style='overflow:hidden;'>
+        
+        <div class='text1' style='font-family: homemade apple; font-size:; text-align:left; color:white; width:400%; top:0; left:100%; opacity:.2; line-height:110%; transform: rotate(90deg); z-index:2;' >
+            <p id='txtrpt' ></p>
+        </div>
+
+        <div style='position:absolute; top:10%; right:15%; left:15%; width:70%; background:; text-align:; color:white; font-size:1.2vh;'>
+          There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</div>
+        <div style='position:absolute; bottom:10%; right:10%; left:10%; width:80%; background:; color:white;'>  
+          <p style='font-size:8vh; font-family:oswald; line-height:100%; margin:;'>Lorem Ipsum</p>
+          <p style='font-size:3vh; line-height:100%; text-transform:uppercase;'>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit</p>
+          <p style='font-size:1.3vh; margin:0;'>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-xl-4" style='background: white;'>      
+      <div class='col-sm-nest bgimg bgimg4'>
+          <div style='position: absolute; width:; /*top: 40%; right: 0;*/ right: 8%; top: 5%; text-align: right; font-size: 7vh; font-family: quicksand; color: #800000; font-weight:; line-height: 110%; opacity:; padding:; /*transform-origin: 0% 0%; transform: rotate(270deg); -webkit-text-stroke-width: .25px; -webkit-text-stroke-color: white;*/'>
+          <i class="fa fa-ellipsis-v"></i>
+          </div>
+
+          <div class="bgimg4_1" style='background:; position:absolute; top:5%; left:15%; right:15%; width:70%; height:44%;'></div>
+          
+          <div class="" style='background:; position: absolute; top:16%; left:-1%; width:; height:; text-align: left; font-family: homemade apple; font-size: 7vh; color: #ff9900; padding:2%; z-index:2; transform-origin: 50% 50%; transform: rotate(270deg);'>
+            <p>Jane Doe</p>
+          </div>
+        
+          <div class="" style='background:; position: absolute; bottom:5%; right:15%; width:50%; height:; text-align: right; font-family:quicksand; font-size: 1.5vh; line-height:120%; color:white; padding:2%; z-index:1;'>
+            <p style='font-family: homemade apple; font-size: 4.5vh; color:; opacity:.6;'>Model</p>
+            <p style='opacity:.7;'>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+            <p style=''>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+          </div>
+
+          <div class="bgimg4_2" style='background:; position: absolute; bottom:5%; left:15%; right:15%; width:70%; height:44%;'></div>
+        
+      </div>
+    </div>
+
+    <div id='' class="col-xl-4" style='background: black; z-index:-1;'>      
+      <div class='col-sm-nest bgimg bgimg5' style='z-index:; overflow:hidden;'>
+       
+        <div style='position: absolute; width:100%; height:100%; left: 0; right: 0; top: 0; bottom: 0; background:rgba(0,0,0,0.05);'>
+         
+        </div>
+        <script>
+          $(document).ready(function(){
+            for(var i = 0; i < 5; i++){  
+              $('#listrpt').append('GHOST WRITING<br> COPY WRITING<br> CONTENT WRITING<br> SOFTWARE<br> BUSINESS<br> TECHNOLOGY<br> NEWS<br> DESCRIPTION<br>');
+            }  
+          });  
+        </script>  
+        <div class='text1' style='font-family:; font-size:; color:white; width:120%; top:0; left:110%; opacity:;' >
+          <p id='listrpt'>
+          </p>
+        </div>
+
+        <div style='position: absolute; width:; /*top: 40%; right: 0;*/ left: 90%; bottom: 1%; text-align: right; font-size: 3vh; font-family: quicksand; color: white; font-weight:; line-height: 110%; opacity:; padding:; transform-origin: 0% 0%; transform: rotate(270deg); /*-webkit-text-stroke-width: .25px; -webkit-text-stroke-color: white;*/'>
+          @milliesarahs
+        </div>
+
+        <div class='text2' style='left:5%; bottom:6%; text-align:left; '>
+          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="row">
+    <div class="col-xl-6" style='background: #ffffe6;'>
+      <span onclick='openFullscreen()'>Click to go full screen.</span>
+    </div>
+    <div class="col-xl-6" style='background: #ffffcc;'>
+      <p>hello! i'm a footer.</p>
+      <p style='font-size:.8em'>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
+    </div>
+  </div>
+
+  <div class="row">   
+    <div class="col-xl-4" style='background: white;'>      
+      <div class='col-sm-nest bgimg bgimg2'>
+        <div class='text10'>
+          Model &nbsp;x&nbsp; Actor
+        </div>
+        <div class='text7'>
+          *Randall<br> Stevens*
+        </div> 
+        <div class='text8'>  
+          <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has normal distribution.</p>
+        </div> 
+        <div class='text9'>  
+          <p>The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, making it look like readable English. It is a fact that a reader will be distracted by content.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-xl-4" style='background: pink;'>
+      <div class='col-sm-nest bgimg bgimg3'>  
+        <div class='text1'>  
+          One of three columns
+        </div>
+        <div class='text5'>  
+          <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+          <p>The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, making it look like readable English.</p>
+        </div> 
+        <div class='text6'>
+          <p><i class="fa fa-spotify" aria-hidden="true"></i></p>
+          <p><i class="fa fa-youtube" aria-hidden="true"></i></p>
+          <p><i class="fa fa-soundcloud" aria-hidden="true"></i></p>
+          <p><i class="fa fa-bandcamp" aria-hidden="true"></i></p>
+        </div>
+      </div>   
+    </div>
+
+    <div class="col-xl-4" style='background: #f2f2f2;'>
+      <div class='col-sm-nest bgimg bgimg1'>
+        <div class='text1'>  
+          PEOPLE AND PORTRAIT<br>PHOTOGRAPHY
+        </div> 
+        <div class='text2'>  
+          It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. 
+        </div>
+        <div class='text3'>
+          <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-three-dots-vertical" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z"/>
+          </svg>
+        </div>
+        <div class='text4'>
+          &copy; Lorem Ipsum PPP 2020
+        </div>   
+      </div>
+    </div>  
+           
+  </div>
+
+  <div class="row">
+    <div class="col-xl-6" style='background: #ffffcc;'>
+      <p>hello! i'm a footer.</p>
+      <p style='font-size:.8em'>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
+    </div>
+    <div class="col-xl-6" style='background: #ffffe6;'>
+      hello! i'm a footer.
+    </div>
+  </div>
   
-  <!-- Footer -->
-  <footer class="w3-container w3-padding-64 w3-light-grey w3-center w3-opacity w3-xlarge" style="margin:-24px">
-    <!--<i class="fa fa-facebook-official w3-hover-opacity"></i>
-    <i class="fa fa-instagram w3-hover-opacity"></i>
-    <i class="fa fa-snapchat w3-hover-opacity"></i>
-    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-    <i class="fa fa-twitter w3-hover-opacity"></i>
-    <i class="fa fa-linkedin w3-hover-opacity"></i>
-    <p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank" class="w3-hover-text-green">w3.css</a></p>-->
-    <p class="w3-medium">Made by me. <br>&copy; 2017 - present</p>
-  </footer>
-  
-<!-- END PAGE CONTENT -->
 </div>
 
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
 <script>
-//$('.template').css('opacity', '0.05');
-   $(window).scroll(function() {
-    var x = document.getElementsByClassName("template");
-    //x.style.opacity = "0.5";
-    var i;
-    for (i = 0; i < x.length; i++) {
-      //x[i].style.opacity = "0.5";
-      var hT1 = x[i].offsetTop,
-           hH = x[i].offsetHeight,
-           sH = screen.height;
-           wS = $(this).scrollTop();
-       if (((wS+(sH*.25)) > hT1)&&((wS+(sH*.25)) < (hT1+(hH/2)))){
-           x[i].style.opacity = "1";
-           /*for (j = (x.length-1); j >= 0; j--) {
-            if(i!=j){
-              x[j].style.opacity = "0.05";
-            }
-           }*/
-           //jQuery('#bgimage').animate({opacity: '0.2'}, "slow");
-          
-       }else{
-          x[i].style.opacity = "0.05";
-          //jQuery('#bgimage').animate({opacity: '1'}, "slow");
-       }
-
-       /*if ((wS+(sH*.25)) > (hT1+(hH/2))){
-           x[i].style.opacity = "0.05";
-        }*/
-
-    }
-});
-// Open and close sidebar
-function openNav() {
-  document.getElementById("mySidebar").style.width = "60%";
-  document.getElementById("mySidebar").style.display = "block";
-}
-
-function closeNav() {
-  document.getElementById("mySidebar").style.display = "none";
-}
+  
 </script>
-
-</body>
 </html>
