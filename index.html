@@ -7,7 +7,9 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Homemade+Apple|Oswald|Cookie|Quicksand|Amatic+SC|Dancing+Script|Satisfy|Indie+Flower|Lobster&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 <style>
 body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 .w3-row-padding img {margin-bottom: 12px}
@@ -34,6 +36,8 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 .template{
   transition: opacity .5s;
 }
+
+
 </style>
 <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
 <script>
@@ -75,6 +79,7 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
     <a href="#portfolio" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Portfolio</a>
     <a href="#about" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">About</a>
     <a href="#skills" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Skills</a>
+    <a href="#projects" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Projects</a>
     <a href="#contact" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Contact</a>
   </div>
 </nav>
@@ -87,8 +92,11 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 
   <!-- Header -->
   <header class="w3-container w3-center" style="padding:98px 16px;" id="home">
-    <h1 style=' text-align:left; font-size:200%;'><b>Saha Subham</b></h1>
-    <p style='font-family:oswald; font-size:300%; text-align:left;'>I DESIGN WEBSITES <br> <span style='color:rgba(0,0,0,0.3);'>I ALSO WRITE CONTENT</span></p>
+    <h1 class='mb-5' style=' text-align:left; font-size:200%; '><b>Subham Saha</b></h1>
+    <p style='font-family:oswald; font-size:250%; text-align:left;'>I DESIGN WEBSITES <br> 
+      <span style='color:rgba(0,0,0,0.5);'>I DEVELOP BACK-ENDS</span> <br>
+      <span style='color:rgba(0,0,0,0.3);'>I DO THE FRONT-END TOO</span> <br>
+      <span style='color:rgba(0,0,0,0.1);'>I LIKE GRAPHIC DESIGN</span></p>
     <img src="https://i2.wp.com/ratexblog.files.wordpress.com/2020/02/20191001134400_img_3548.jpg?ssl=1" class="w3-image w3-hide-large w3-hide-small w3-round" style="display:block;width:60%;margin:auto;">
     <img src="https://i2.wp.com/ratexblog.files.wordpress.com/2020/02/20191001134400_img_3548.jpg?ssl=1" class="w3-image w3-hide-large w3-hide-medium w3-round" width="1000" height="1333">
     <!--<button class="w3-button w3-light-grey w3-padding-large w3-margin-top" style=' text-align:left;'>
@@ -96,9 +104,11 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
     </button>-->
   </header>
 
+
+
   <!-- Portfolio Section -->
   <div class="w3-padding-32 w3-content" id="portfolio">
-    <h2 class="w3-text-grey">My Portfolio</h2>
+    <h3 class="w3-text-grey">My Portfolio</h3>
     <hr class="w3-opacity">
 	  
 	  <!--<div style="padding:100% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/456240931?autoplay=1&color=ff0179&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>-->
@@ -143,6 +153,8 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
   <!-- End Portfolio Section -->
   </div>
 
+
+
   <!-- About Section -->
   
   
@@ -156,11 +168,11 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 	<p>As a content writer, I have worked for around 2 years with several companies and have managed over 300 blogs and articles.
 	</p>
 	  
-	 <div style='width:100%; height:30vw; color:white; text-align:center; font-size:10vw;'>
+	 <!-- <div style='width:100%; height:30vw; color:white; text-align:center; font-size:10vw;'>
 	  <a href='https://www.fiverr.com/share/pw9qgp' target='blank'><div style='width:33.33%; height:100%; float:left; text-align:center; line-height:30vw; background:#4d4d4d;'><span class="iconify" data-icon="jam-fiverr" data-inline="false"></span></div></a>
 	  <a href='https://www.upwork.com/freelancers/~0103fb7e88413113ca' target='blank'><div style='width:33.33%; height:100%; float:left; text-align:center; line-height:30vw; background:#737373;'><span class="iconify" data-icon="cib:upwork" data-inline="false"></span></div></a>
  	  <a href='https://www.linkedin.com/in/subham99saha' target='blank'><div style='width:33.33%; height:100%; float:left; text-align:center; line-height:30vw; background:#999999;'><span class="iconify" data-icon="bx:bxl-linkedin" data-inline="false"></span></div></a>
-	 </div>
+	 </div> -->
 	  
 <h3 class="w3-padding-16" id="skills">My Skills</h3>
 	<h4 class="w3-padding-16" style="color:black;"><b>Website</b></h4>
@@ -205,8 +217,8 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
         Experience
       </div>
       <div class="w3-quarter w3-section">
-        <span class="w3-xlarge">5+</span><br>
-        Projects Done
+        <span class="w3-xlarge">8+</span><br>
+        Projects Delivered
       </div>
       <!--<div class="w3-quarter w3-section">
         <span class="w3-xlarge">89+</span><br>
@@ -239,7 +251,120 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
     
   <!-- End About Section -->
   </div>
-	<h2 id="miscellaneous">Miscellaneous</h2>
+
+
+  <!-- Projects Section -->
+  <div class="mt-5" id="projects">
+    <h2 class="w3-text-grey">My Projects</h2>
+  <div class="my-5 pr-5">
+    <div class="my-5">
+    <h5>CRON that updates prices to values lower than competitors’ — Node JS</h5>
+    <p>
+      Created a CRON that checks rival product prices by scraping the product’s webpage and updates its price to the lowest possible value to ensure the highest rank in vendor listings.
+    </p>
+  </div>
+
+  <div class="my-5">
+    <h5>Admin Dashboard for Shipment Management — React.js</h5>
+    <p>
+      Created separate dashboards (for both admin and super admin) that will allow the admin/super admin to run CRUD operations on current orders, shipments, returns, courier services, and user/admin information.
+    </p>
+  </div>
+
+  <div class="my-5">
+    <h5>Order Management — Node JS</h5>
+    <p>
+      Created APIs (both REST and SOAP) to:
+    </p>
+    <ul>
+      <li>Identify the courier service provider (FedEx, ICS, Purolator, UPS, USPS, etc) from a given unique tracking id and use the same to track the shipment as well as get live status of the respective delivery.</li>
+      <li>Fetch tracking numbers of shipments by their references and then use the same to track its overall delivery status.</li>
+      <li>Generate return labels and pickup requests, for product items to be returned/replaced, via popular courier service providers.</li>
+    </ul>
+  </div>
+
+  <div class="my-5">
+    <h5>Data Cleaning/Handling — Python</h5>
+    <p>
+      Used Boto3 to fetch/upload files from/to an AWS server and Pandas to read/edit those files, carrying large chunks of data that require validation/rectification/segregation. Used SQL for DB management.
+    </p>
+  </div>
+
+  <div class="my-5">
+    <h5>Python Bot for File Download — Python</h5>
+    <p>
+      Used pandas, selenium, and pyautogui to automate login to sites that do not have dedicated API services, visiting its private URLs, and downloading necessary files as per instructions provided by the user in the form of CSV files.
+    </p>
+  </div>
+</div>
+</div>
+
+
+<!-- Personal Section -->
+<div class="mt-5" id="personal">
+  <h4 class="w3-padding-16" style="color:black;"><b>Personal</b></h4>
+<div class="mb-5 pr-5">
+  <div class="mb-5">
+    <h5>WhatsApp bot DALL.E-2 — Node JS</h5>
+    <p>
+      An image generation API, scripted in Node JS, that uses the DALL.E-2 model from OpenAI.
+      <a href="https://github.com/subham99saha/DALL.E-2">GitHub Link</a>
+    </p>
+    <p>
+      A WhatsApp bot that can generate images based on user prompts.
+      <a href="https://github.com/subham99saha/whatsapp-bot-DALL.E-2">GitHub Link</a>
+    </p>
+  </div>
+
+  <div class="my-5">
+    <h5>WhatsApp bot gpt-3.5-turbo — Node JS</h5>
+    <p>
+      A chatbot API that uses the gpt-3.5-turbo model from OpenAI.
+      <a href="https://github.com/subham99saha/gpt-3.5-turbo">GitHub Link</a>
+    </p>
+    <p>
+      A WhatsApp bot that uses the gpt-3.5-turbo model from OpenAI to converse with users.
+      <a href="https://github.com/subham99saha/whatsapp-bot-gpt-3.5-turbo">GitHub Link</a>
+    </p>
+  </div>
+
+  <div class="my-5">
+    <h5>Poker all possible winning hands (API & UI) — React JS, Node JS</h5>
+    <p>
+      Finds out all possible winning hands for a given Flop, Turn, or River.
+      <a href="https://github.com/subham99saha/poker-all-possible-winning-hands-API">API GitHub Link</a>
+      <a href="https://github.com/subham99saha/poker-all-possible-winning-hands-UI">UI GitHub Link</a>
+    </p>
+  </div>
+
+  <div class="my-5">
+    <h5>WordPress custom portfolio theme and Blog — WordPress.org, PHP</h5>
+    <p>
+      A business portfolio along with a blog section and custom plugins, built with WordPress.org.
+      <a href="https://github.com/subham99saha/wordpress-custom-portfolio-theme-and-blog">GitHub Link</a>
+    </p>
+  </div>
+
+  <div class="my-5">
+    <h5>Movie-watching analytics and suggestions — React JS</h5>
+    <p>
+      Allowed the user to create a list of movies, and then used APIs to return analyzed watching patterns (based on genres, director, etc) as well as more title suggestions.
+    </p>
+  </div>
+
+  <div class="my-5">
+    <h5>E-commerce site for old books — WordPress (WooCommerce)</h5>
+    <p>
+      Used the WooCommerce plugin on WordPress to build a platform for selling books, along with integrated features like coupons and dynamic delivery pricing based on region.
+    </p>
+  </div>
+
+</div></div>
+	
+
+  <!-- Miscellaneous Section -->
+  <div class="w3-content w3-justify w3-text-grey w3-padding-32">
+  <h2 class="w3-padding-16" id="miscellaneous">Miscellaneous</h2>
     <hr class="w3-opacity">
 	<p style='font-size:10px; color:rgba(0,0,0,0.4);'>The following are experiments that I have been working on but are yet to be published or owned by anyone.</p>
 	<div style='width:100%; height:400px; background:white; padding:0px; overflow-x:auto; overflow-y:hidden; white-space:nowrap;'>
@@ -258,8 +383,11 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 	  <li style='margin:0 10px; display:inline;'><img style='height:350px; width:auto;' src="https://ratexblog.files.wordpress.com/2020/03/cloudbio2.png" style="width:100%"></li>
 	  </ul>
 	</div>
+</div>
+
+
   <!-- Contact Section -->
-  <div class="w3-padding-32 w3-content w3-text-grey" id="contact" style="margin-bottom:64px">
+  <div class="w3-padding-32 w3-content w3-text-grey mt-5" id="contact" style="margin-bottom:64px">
     <h2>Contact Me</h2>
     <hr class="w3-opacity">
 
